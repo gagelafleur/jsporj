@@ -1,0 +1,82 @@
+fieldset {
+	border-top: 3px solid #F36E21;
+	box-shadow: none;
+}
+a {
+	color: #513127;
+  	text-decoration: none;
+}
+input[type="submit"][id^="edit-submit"], input#edit-actions-submit, input[id^="save-continue"], input[type="submit"][id^="edit-save"], input#edit-save, input#edit-submit, input#edit-actions-save, #media-browser-page a.button-yes {
+  background: #F36E21;
+}
+table th.active {
+  background: #F36E21;
+}
+ul.primary li a:hover {
+  color: #F36E21;
+}
+ul.secondary li a:hover,ul.secondary li.active a,ul.secondary li.active a.active {
+  color: #F36E21;
+  border-color: #F36E21;
+}
+div.vertical-tabs ul li.selected a,div.vertical-tabs ul li.selected a:hover,div.vertical-tabs ul li.selected a:focus,div.vertical-tabs ul li.selected a:active {
+  border-left: 5px solid #F36E21;
+}
+.overlay div.breadcrumb a:hover {
+  color: #F36E21;
+}
+#overlay-tabs li a:hover {
+  background: none repeat scroll 0 0 #F36E21;
+}
+body.adminimal-theme .ui-autocomplete .ui-menu-item a.ui-state-focus:hover,
+body.adminimal-theme .ui-autocomplete .ui-menu-item a.ui-state-hover {
+  background-color: #F36E21;
+}
+body.adminimal-theme .views-display-top ul#views-display-menu-tabs li a:hover,
+body.adminimal-theme .views-display-top ul#views-display-menu-tabs li a:focus {
+	background-color: #F36E21;
+	box-shadow: 0px -1px 0px #F36E21, 0px 1px 0px #F36E21;
+}
+body div.warning a, body div.error a, body div.status a {
+  color: #F36E21;
+}
+body.adminimal-theme .views-ui-display-tab-bucket:hover h3 {
+  border-color: #F36E21;
+}
+body.adminimal-theme .chosen-container.chosen-container-active > a {
+  border-color: #F36E21;
+}
+
+body.adminimal-theme .chosen-container.chosen-container-active .chosen-drop,
+body.adminimal-theme .chosen-container-active .chosen-choices {
+  border-color: #F36E21;
+}
+
+body.adminimal-theme .chosen-container.chosen-container-active.chosen-with-drop .chosen-drop {
+  border-top: 1px solid #F36E21;
+}
+body.adminimal-theme .chosen-container .chosen-results li.highlighted {
+  background: #F36E21;
+}
+.adminimal-theme #toolbar div.toolbar-menu ul li.active-trail a {
+  background: #F36E21;
+  text-shadow: none;
+}
+.adminimal-theme.page-admin-reports-updates .content h3 {
+  background: #F36E21;
+}
+input.form-submit:hover,
+a.button:hover,
+div.exposed-filters input#edit-submit:hover,
+#admin-menu a:hover {
+  background: #F36E21;
+}
+input#edit-preview,
+input#edit-next,
+input#preview-submit,
+input[type="submit"][id^="edit-return"] {
+  background: #F36E21;
+}
+body.adminimal-menu #admin-menu .dropdown li ul {
+	border-top: #F36E21;
+}

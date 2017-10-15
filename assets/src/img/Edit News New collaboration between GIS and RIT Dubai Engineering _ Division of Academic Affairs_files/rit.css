@@ -1,0 +1,42 @@
+
+
+body.adminimal-menu div#admin-menu a:hover {
+  background-color: #f36e21;
+  color: #fff;
+}
+
+
+body.adminimal-menu #admin-menu .dropdown li li li:hover,
+body.adminimal-menu #admin-menu .dropdown li:hover {
+  background: #f36e21 !important;
+}
+
+
+body.adminimal-menu #admin-menu .dropdown li.admin-menu-toolbar-category a:focus {
+  background: #f36e21;
+}
+
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper .dropdown li li.expandable:hover {
+  background: url("images/square.png") no-repeat scroll 145px -83px #f36e21 !important;
+}
+
+
+body.adminimal-menu div.shortcut-toolbar div#toolbar a#edit-shortcuts:focus {
+  background: #f36e21;
+}
+
+
+body.adminimal-menu #admin-menu .dropdown li ul {
+  border-top: 3px solid #f36e21;
+}
+
+body.adminimal-menu #admin-menu .dropdown li.admin-menu-action.admin-menu-users a:hover {
+  background: #f36e21;
+}
+
+
+body.adminimal-menu #admin-menu #admin-menu-wrapper div#toolbar div.toolbar-shortcuts ul li a:hover {
+  background-color: #f36e21;
+  background-position: 7px -78px;
+}
