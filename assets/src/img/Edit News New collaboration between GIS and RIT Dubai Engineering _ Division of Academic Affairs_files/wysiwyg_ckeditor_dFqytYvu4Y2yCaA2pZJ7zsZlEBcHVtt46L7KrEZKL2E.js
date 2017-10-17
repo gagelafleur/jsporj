@@ -1,1 +1,0 @@
-window.CKEDITOR_BASEPATH = '/academicaffairs/sites/all/libraries/ckeditor/';
