@@ -34,7 +34,11 @@ function init() {
 
   }
 
-  firstLocal = localStorage.getItem('choice1');
+  if(window.localStorage) {
+    firstLocal = localStorage.getItem('choice1');
+  } else {
+    firstLocal = GetCookie('choice1');
+  }
 
   var selectedIndex = 0;
   var selectedValue = '';
@@ -83,12 +87,22 @@ function updateSelects(event) {
     }
     var queryUpdate = event.target.options[event.target.selectedIndex].firstChild.nodeValue;
     codeAddress(queryUpdate, selectsOnPage * 4);
-    localStorage.setItem('choice' + selectsOnPage, event.target.options[event.target.selectedIndex].value);
+    if(window.localStorage) {
+      localStorage.setItem('choice' + selectsOnPage, event.target.options[event.target.selectedIndex].value);
+    } else {
+      SetCookie('choice' + selectsOnPage, event.target.options[event.target.selectedIndex].value);
+    }
+
 
   } else {
 
     elementToRemove = $$$('select-container', document.getElementsByClassName('select-container').length - 1);
-    localStorage.removeItem('choice' + selectsOnPage);
+
+    if(window.localStorage) {
+      localStorage.removeItem('choice' + selectsOnPage);
+    } else {
+      DeleteCookie('choice' + selectsOnPage);
+    }
     slideSelect(elementToRemove, true, event);
 
   }
@@ -124,7 +138,12 @@ function createSelect(level, key) {
     updateSelects(event);
   }, true);
   var nextLevel = level + 1;
-  localChoice = localStorage.getItem('choice' + level);
+
+  if(window.localStorage) {
+    localChoice = localStorage.getItem('choice' + level);
+  } else {
+    localChoice = GetCookie('choice' + level);
+  }
 
   var selectedIndex = 0;
   var selectedValue = '';
@@ -227,6 +246,8 @@ function createForm(query) {
   form.appendChild(submit);
 
   form.method = 'POST';
+  form.enctype = 'multipart/form-data';
+  form.autocomplete = 'off';
 
   if (form.addEventListener) {
     form.addEventListener("submit", function(event) {

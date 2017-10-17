@@ -35,16 +35,19 @@
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxfWV_nUqEF4omxbak_RgavmpldJv_S4A&callback=initMap"></script>
 
     <?php
-
-      if (isset($_POST['email'])) {
+      $_SESSION["email"] = true;
+      if ($_SESSION["email"] && isset($_POST['email'])) {
           $email = $_POST['email'];
           $subject = 'State Park Adventure at '.$_POST['parkName'];
           $message = 'Link: ' . $_POST[mapLink];
           if (mail($email, $subject, $message)) {
               print '<script>alert("Mail Sent Successfully!")</script>';
-              $_POST= array();
+
           }
       }
+      unset($_SESSION["email"]);
+      unset($_POST);
+      header("Location:index.php");
 
     ?>
 
